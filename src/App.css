@@ -1,38 +1,70 @@
-.App {
+body {
+  font-family: arial,sans-serif;
+}
+
+#root {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  padding: 15px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #222;
+  height: 100px;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span.durations {
+  font-size: 12px;
+}
+
+#courses {
+  width: 500px;
+  text-align: left;
+  display: inline-block;
+}
+
+#courses p {
+  display: block;
+  padding: 20px;
+  background-color: #c5eff7;
+  color: black;
+  position: relative;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s
+}
+
+#courses p b {
+  position: absolute;
+  right: 30px;
+  width: 100px;
+  color: black;
+  text-align: right;
+}
+
+#courses p:hover {
+  background-color: #52b3d9;
+  color: white;
+}
+
+#courses p.active {
+  color: white;
+  background-color: #446cb3;
+}
+
+#courses p.active b {
+  color: white;
+}
+
+#total {
+  background-color: #fff !important;
+  cursor: default !important;
+  padding-top: 10px !important;
+  font-size: 20px;
 }
